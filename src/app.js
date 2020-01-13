@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     }
 
-        // itemPriority: function (index) {
-        //     this.todos[index].priority = 
+        // itemPriority: function (index   ) {
+        //     this.todos
         // }
     
     })

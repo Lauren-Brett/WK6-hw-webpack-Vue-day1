@@ -28,6 +28,9 @@
         <label for="low">Low Priority</label>
             <input class="radio" type="radio" value="low" v-model="newTodo.priority">
 
+            <!-- v-bind:value="todos.priority" --- UNDEFINED ERROR
+            > -->
+
         <label for="high">High Priority</label>
             <input class="radio" type="radio" value="high" v-model="newTodo.priority" 
             v-bind:value="todos.priority">
