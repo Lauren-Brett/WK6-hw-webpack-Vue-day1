@@ -23,13 +23,16 @@
         <label for="high">High Priority</label>
             <input type="radio" id="high" v-bind:value="item.priority = 'high'" v-model="newTodo.priority">
         <br> -->
+
+        
         <label for="low">Low Priority</label>
             <input class="radio" type="radio" value="low" v-model="newTodo.priority">
 
         <label for="high">High Priority</label>
-            <input class="radio" type="radio" value="high" v-model="newTodo.priority">
+            <input class="radio" type="radio" value="high" v-model="newTodo.priority" 
+            v-bind:value="todos.priority">
 
-    
+         <span></span>
 
         <form v-on:submit.prevent="saveNewTodo">
 
