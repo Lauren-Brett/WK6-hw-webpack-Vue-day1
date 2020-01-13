@@ -7,7 +7,12 @@ body {
     margin: 0 auto;
 }
 
-li.low {
+li.high {
     color: red;
+    font-style: italic;
+}
+
+label #radio {
+    font-weight: bold;
 }
 
