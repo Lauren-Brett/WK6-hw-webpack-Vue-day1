@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // this.newTodo: { todo: "", priority: "" }
         },
 
-            
+        // itemPriority: function (index) {
+        //     this.todos[index].priority = 
+        // }
     
     })
 

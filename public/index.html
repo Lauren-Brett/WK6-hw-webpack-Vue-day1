@@ -16,23 +16,25 @@
                 <span>{{ item.todo  }}</span>
 
                 <!-- <span v-if="item.priority">Job Done!</span> -->
-                <br>
-                <span>Priority: {{ priority }}</span>
-                <br>
-                <label for="high">High Priority</label>
-                <input type="radio" id="high" v-bind:value="item.priority = 'high'" v-model="priority">
-                <br>
-                <label for="low">Low Priority</label>
-                <input type="radio" id="low" v-bind:value="item.priority = 'low'" 
-                v-model="priority">
-                <br>
-                
-                
-
+    
                 <!-- <button v-if="!item.priority"></button> -->
 
             </li>
         </ul>
+
+        <br>
+        <span>Priority: {{ priority }}</span>
+        <!-- <br>
+        <label for="high">High Priority</label>
+            <input type="radio" id="high" v-bind:value="item.priority = 'high'" v-model="newTodo.priority">
+        <br> -->
+        <label for="low">Low Priority</label>
+            <input type="radio" value="slow" v-model="priority">
+
+        <label for="high">High Priority</label>
+            <input type="radio" value="high" v-model="priority">
+
+    
 
         <form v-on:submit.prevent="saveNewTodo">
 
