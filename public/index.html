@@ -12,18 +12,16 @@
     <div id="app">
         
         <ul>
-            <li v-for="(item, index) in todos" v-bind:class="item.priority ? 'low' : 'high' " >
-            <span>{{ item.todo }}</span>
-            <span>{{ item.priority }}</span>
+            <li v-for="(todo, index) in todos" v-bind:class="todo.priority" >
+                <span>{{ todo.todo }}</span>
+                <span>{{ todo.priority }}</span>
             </li>
         </ul>
 
-        
         <form v-on:submit.prevent="saveNewTodo">
             <label for="new-todo">Add Todo</label>
             <input type="text" id="new-todo" v-model="newTodo.todo">
             <input type="submit" value="Save To Do!">
-
 
              <label for="low">Low Priority</label>
              <input class="radio" type="radio" value="low" v-model="newTodo.priority">
@@ -34,8 +32,6 @@
         </form>
 
         <!-- <span>Priority: {{ todos[0] }}</span> -->
-
     </div>
-    
 </body>
 </html>
