@@ -13,14 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
        
             newTodo:  {todo: "", priority: ""}
         } ,
-
         methods: {
             saveNewTodo: function() {
-                this.todos.push(this.newTodo)
-            },
-
-            // this.newTodo: { todo: "", priority: "" }
+            this.todos.push(this.newTodo);
+            this.newTodo = { todo: "", priority: "" }
         },
+    }
 
         // itemPriority: function (index) {
         //     this.todos[index].priority = 

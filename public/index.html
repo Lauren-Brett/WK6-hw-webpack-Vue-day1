@@ -23,16 +23,16 @@
         </ul>
 
         <br>
-        <span>Priority: {{ priority }}</span>
+        <span>Priority: {{ todos.priority }}</span>
         <!-- <br>
         <label for="high">High Priority</label>
             <input type="radio" id="high" v-bind:value="item.priority = 'high'" v-model="newTodo.priority">
         <br> -->
         <label for="low">Low Priority</label>
-            <input type="radio" value="slow" v-model="priority">
+            <input type="radio" value="slow" v-model="newTodo.priority">
 
         <label for="high">High Priority</label>
-            <input type="radio" value="high" v-model="priority">
+            <input type="radio" value="high" v-model="newTodo.priority">
 
     
 
