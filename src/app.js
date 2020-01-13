@@ -9,8 +9,18 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         newToDo: ""
-
-
     
-    })
+    }
+
+        methods: {
+            saveNewTodo: function() {
+                this.data.todos.push(newTodo)
+            }
+            
+
+        }
+    
+    );
+
+
 })
