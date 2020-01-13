@@ -43,7 +43,7 @@
             v-bind:value="todos.priority">
 
          <span>{{ todos.priority }}</span>
-        <span v-on:change="newTodo = 'low'" ></span>
+         <span v-if="newTodo = 'low'" v-on:change="newTodo" ></span>
 
 
 
