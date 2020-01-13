@@ -2,3 +2,8 @@ body {
     background-color: lightgrey;
 }
 
+#app {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    margin: 0 auto;
+}
+
