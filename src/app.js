@@ -5,22 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     new Vue( {
         el: "#app",
         data: {
-            todos: ["Buy shopping", "Clean bathroom", "Car MOT"]
-        },
-
-        newToDo: ""
-    
-    }
+            todos: ["Buy shopping", "Clean bathroom", "Car MOT"],
+       
+            newTodo: ""
+    },
+        
 
         methods: {
             saveNewTodo: function() {
-                this.data.todos.push(newTodo)
-            }
-            
-
+                this.todos.push(this.newTodo)
+            },
+            // this.newTodo = ""
         }
     
-    );
+})
 
 
 })
