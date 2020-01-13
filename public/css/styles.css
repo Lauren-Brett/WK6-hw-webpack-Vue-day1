@@ -7,3 +7,7 @@ body {
     margin: 0 auto;
 }
 
+li.low {
+    color: red;
+}
+
