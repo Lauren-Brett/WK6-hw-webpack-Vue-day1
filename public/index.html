@@ -13,7 +13,8 @@
         
         <ul>
             <li v-for="(item, index) in todos" v-bind:class="newTodo.todo" >
-            <span>{{ item.todo  }}</span>
+            <span>{{ item.todo }}</span>
+            <span>{{ item.priority }}</span>
             </li>
         </ul>
 
@@ -24,26 +25,19 @@
             <input type="submit" value="Save To Do!">
         </form>
 
-
-
-        <span>Priority: {{ todos.priority }}</span>
-        <!-- <br>
-        <label for="high">High Priority</label>
-            <input type="radio" id="high" v-bind:value="item.priority = 'high'" v-model="newTodo.priority">
-        <br> -->
+        <!-- <span>Priority: {{ todos[0] }}</span> -->
 
         
         <label for="low">Low Priority</label>
             <input class="radio" type="radio" value="low" v-model="newTodo.priority">
 
-            <!-- v-bind:value="todos.priority" --- UNDEFINED ERROR
-            > -->
         <label for="high">High Priority</label>
             <input class="radio" type="radio" value="high" v-model="newTodo.priority" 
-            v-bind:value="todos.priority">
+            value="todos.priority">
 
-         <span>{{ todos.priority }}</span>
-         <span v-if="newTodo = 'low'" v-on:change="newTodo" ></span>
+       
+
+         <!-- <span v-if="newTodo = 'low'" v-on:change="newTodo" ></span> -->
 
 
 
